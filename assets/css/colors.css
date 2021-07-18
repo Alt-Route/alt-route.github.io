@@ -6,20 +6,23 @@
 
 
 :root {
-	--themecolor: #1ABC9C; /* Change this Color */
+	--themecolor: #9e0042; /* Change this Color */
 }
 
 
 ::selection {
-	background: var(--themecolor);
+	background: #faef01;
+	color: black;
 }
 
 ::-moz-selection {
-	background: var(--themecolor);
+	background:  #faef01;
+	color: black;
 }
 
 ::-webkit-selection {
-	background: var(--themecolor);
+	background:  #faef01;
+	color: black;
 }
 
 
@@ -137,7 +140,7 @@ input.switch-toggle-flat:checked + label:after,
 .dark input.switch-toggle-round:checked + label::before,
 .dark input.switch-toggle-flat:checked + label,
 .dark input.switch-toggle-flat:checked + label::after {
-	background-color: var(--themecolor);
+	background-color: #faef01;
 }
 
 .bg-color,

@@ -3637,7 +3637,6 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 .menu-link i {
 	position: relative;
 	top: -1px;
-	font-size: 0.875rem;
 	width: 16px;
 	text-align: center;
 	margin-right: 6px;

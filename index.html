@@ -1,0 +1,290 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+title: home
+layout: home
+about_title: What is Alt Route?
+about_section: Alt route is a fully funded project through a grant received from RisingYouth and TakingITGlobal. The project works to create safe, accessible, and inclusive skatepark experiences for youth with vision loss and low vision. We do this by implementing adaptations to skateparks; adaptations that we've pioneered through hands-on research with our skate team.
+feature_one_icon: icon-line2-eye
+feature_one_subtitle: Make the Invisible Visible
+feature_one_title: High Visibility Markers
+feature_one_description: We use brightly coloured series of lines and patterns layed out onto the concrete with a "colour code" that helps skaters with low-vision to be able to 'see' transitions, lines and landing spots.
+feature_two_icon: icon-line2-volume-2
+feature_two_subtitle: Hear What's Coming
+feature_two_title: Auditory Beacons
+feature_two_description: Audio beacons emit a beeping or ticking noise that allow low vision and no vision skateboarders the ability to determine where skatepark obstacles are and used to provide reference for ramps, stairs, drops, and gaps.
+feature_three_icon: icon-line2-speedometer
+feature_three_subtitle: Get a Feel for the Park
+feature_three_title: Rumble Strips
+feature_three_description: Just like rumble strips on a road are designed to get your attention. Rumble strips in the skatepark give low vision and no vision skaters warning of the more advanced skateboarding obstacles in a park.
+walkthrough_bg_img: /assets/images/skate/cass1.jpg
+walkthrough_thumbnail_img: /assets/images/skate/adaptations-demo.png
+walkthrough_subtitle: Adaptation Demonstration
+walkthrough_title: Making A Roll-in & Fly-out Visible
+walkthrough_description: Alt Route's Matt and Curtis explain some of the visibility markers placed strategically to help Cassandra work towards her goal of 'flying out' of the bathtub bowl at Calgary's Shaw Millenium Park.
+testimonials_bg_img: /assets/images/skate/testimonialsbg.jpg
+
+---
+<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container">
+					<div class="row align-items-center">
+
+						<div class="col-lg-5">
+							<div class="heading-block">
+								<h1>{{ page.about_title }}</h1>
+							</div>
+							<p class="lead" style="font-size: 1.25rem">{{ page.about_section }}</p>
+						</div>
+
+						<div class="col-lg-7 align-self-end">
+
+							<div class="position-relative overflow-hidden">
+								<img src="/assets/images/skate/skatebatsbg.png" data-animate="fadeInUp" data-delay="100" alt="A background of hand line drawings of a burger, pop, shoes, glasses, headphones and other skate culture accessories followed by the Skate Bats Logo which is a touque with bat ears and and a lightning bolt on the touque brim with the words Skate Bats underneath.">
+								<img src="/assets/images/skate/skatebats.png" style="top: 0; left: 0; min-width: 100%; min-height: 100%;" data-animate="fadeInUp" data-delay="400" alt="A photo of 5 low vision skate boarders standing and smiling. From the left. A smiling teenage boy with shades, in a blue shirt, grey shorts, with black knee pads. A smiling young man with a baseball cap, grey t-shirt, brown khakis with a skate board propped on his left leg. A smiling teenage boy, wearing a red helmet, shades, a t-shirt that fades from blue to magenta and black shorts. A smiling teenage girl with long light brown hair wearing a blue shirt and dark grey shorts. And last; a smirking teenage girl wearing a grey Edmonton Elks baseball cap, blue shirt and grey and green shorts." class="position-absolute">
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="section my-0">
+					<div class="container">
+
+						<div class="row mt-4 col-mb-50">
+
+							<div class="col-lg-4">
+								<i class="i-plain color i-large {{ page.feature_one_icon }} inline-block" style="margin-bottom: 15px;"></i>
+								<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+									<span class="before-heading">{{ page.feature_one_subtitle }}</span>
+									<h4>{{ page.feature_one_title }}</h4>
+								</div>
+								<p>{{ page.feature_one_description }}</p>
+							</div>
+
+							<div class="col-lg-4">
+								<i class="i-plain color i-large {{ page.feature_two_icon }} inline-block" style="margin-bottom: 15px;"></i>
+								<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+									<span class="before-heading">{{ page.feature_two_subtitle }}</span>
+									<h4>{{ page.feature_two_title }}</h4>
+								</div>
+								<p>{{ page.feature_two_description }}</p>
+							</div>
+
+							<div class="col-lg-4">
+								<i class="i-plain color i-large {{ page.feature_three_icon }} inline-block" style="margin-bottom: 15px;"></i>
+								<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
+									<span class="before-heading">{{ page.feature_three_subtitle }}</span>
+									<h4>{{ page.feature_three_title }}</h4>
+								</div>
+								<p>{{ page.feature_three_description }}</p>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row clearfix align-items-stretch">
+
+					<div class="col-lg-6 center col-padding" style="background: url('{{ page.walkthrough_bg_img }}') center center no-repeat; background-size: cover;">
+					</div>
+
+					<div class="col-lg-6 center col-padding" style="background-color: #F5F5F5;">
+						<div class="heading-block border-bottom-0">
+							<span class="before-heading color">{{ page.walkthrough_subtitle}}</span>
+							<h3>{{ page.walkthrough_title }}</h3>
+						</div>
+
+						<div class="center bottommargin">
+							<a class="d-block position-relative" href="https://vimeo.com/101373765" data-lightbox="iframe">
+								<img src="{{ page.walkthrough_thumbnail_img }}" alt="Video">
+								<div class="bg-overlay">
+									<div class="bg-overlay-content dark">
+										<span class="overlay-trigger-icon size-lg op-ts op-07 bg-light text-dark" data-hover-animate="op-1" data-hover-animate-out="op-07" data-hover-parent=".row"><i class="icon-line-play"></i></span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<p class="lead mb-0" style="font-size: 1.25rem;">{{ page.walkthrough_description }}</p>
+					</div>
+				</div>
+
+                <div class="section my-0">
+					<div class="container">
+                        <div class="embedsocial-hashtag" data-ref="98b0124683799fcb177b9de6fb2e8bb7ad07bb54" ><a class="feed-powered-by-es" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Powered by EmbedSocial">Powered by EmbedSocial<span>→</span></a></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
+                    </div>
+                </div>
+
+				<div class="section parallax dark mb-0" style="background-image: url('{{ page.testimonials_bg_img }}'); padding: 100px 0;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+
+					<div class="heading-block center">
+						<h3>Testimonials</h3>
+					</div>
+
+					<div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+						<div class="flexslider">
+							<div class="slider-wrap">
+								<div class="slide">
+									<div class="testi-image">
+										<a href="#"><img src="/assets/images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+									</div>
+									<div class="testi-content">
+										<p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
+										<div class="testi-meta">
+											Steve Jobs
+											<span>Apple Inc.</span>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="testi-image">
+										<a href="#"><img src="/assets/images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+									</div>
+									<div class="testi-content">
+										<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+										<div class="testi-meta">
+											Collis Ta'eed
+											<span>Envato Inc.</span>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="testi-image">
+										<a href="#"><img src="/assets/images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+									</div>
+									<div class="testi-content">
+										<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
+										<div class="testi-meta">
+											John Doe
+											<span>XYZ Inc.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="section mt-0 border-top-0">
+					<div class="container clearfix">
+						<div class="heading-block center m-0">
+							<h3>Latest News</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="container" style="margin-bottom: 60px;">
+					<div class="row posts-md col-mb-30">
+
+						<div class="col-lg-3 col-md-6">
+							<div class="entry">
+								<div class="entry-image">
+									<a href="#"><img src="/assets/images/magazine/thumb/1.jpg" alt="Image"></a>
+								</div>
+								<div class="entry-title title-xs nott">
+									<h3><a href="blog-single.html">Bloomberg smart cities; change-makers economic security</a></h3>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 13th Jun 2021</li>
+										<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 53</a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Prevention effect, advocate dialogue rural development lifting people up community civil society. Catalyst, grantees leverage.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6">
+							<div class="entry">
+								<div class="entry-image">
+									<a href="#"><img src="/assets/images/magazine/thumb/2.jpg" alt="Image"></a>
+								</div>
+								<div class="entry-title title-xs nott">
+									<h3><a href="blog-single.html">Medicine new approaches communities, outcomes partnership</a></h3>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 24th Feb 2021</li>
+										<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 17</a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Cross-agency coordination clean water rural, promising development turmoil inclusive education transformative community.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6">
+							<div class="entry">
+								<div class="entry-image">
+									<a href="#"><img src="/assets/images/magazine/thumb/3.jpg" alt="Image"></a>
+								</div>
+								<div class="entry-title title-xs nott">
+									<h3><a href="blog-single.html">Significant altruism planned giving insurmountable challenges liberal</a></h3>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 30th Dec 2021</li>
+										<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Micro-finance; vaccines peaceful contribution citizens of change generosity. Measures design thinking accelerate progress medical initiative.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6">
+							<div class="entry">
+								<div class="entry-image">
+									<a href="#"><img src="/assets/images/magazine/thumb/4.jpg" alt="Image"></a>
+								</div>
+								<div class="entry-title title-xs nott">
+									<h3><a href="blog-single.html">Compassion conflict resolution, progressive; tackle</a></h3>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> 15th Jan 2021</li>
+										<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 54</a></li>
+									</ul>
+								</div>
+								<div class="entry-content">
+									<p>Community health workers best practices, effectiveness meaningful work The Elders fairness. Our ambitions local solutions globalization.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+                <div class="section mt-0 border-top-0" style="margin-bottom: 0px;">
+					<div class="container clearfix">
+						<div class="heading-block center m-0">
+							<h3>Our Supporters</h3>
+						</div>
+                        <p>&nbsp;</p>
+                        <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="60" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+
+                            <div class="oc-item"><a href="#"><img src="/assets/images/clients/1.png" alt="Clients"></a></div>
+                            <div class="oc-item"><a href="#"><img src="/assets/images/clients/2.png" alt="Clients"></a></div>
+                            <div class="oc-item"><a href="#"><img src="/assets/images/clients/3.png" alt="Clients"></a></div>
+                            <div class="oc-item"><a href="#"><img src="/assets/images/clients/4.png" alt="Clients"></a></div>
+                            <div class="oc-item"><a href="#"><img src="/assets/images/clients/5.png" alt="Clients"></a></div>
+                            <div class="oc-item"><a href="#"><img src="/assets/images/clients/6.png" alt="Clients"></a></div>
+                            <div class="oc-item"><a href="#"><img src="/assets/images/clients/7.png" alt="Clients"></a></div>
+                            <div class="oc-item"><a href="#"><img src="/assets/images/clients/8.png" alt="Clients"></a></div>
+                            <div class="oc-item"><a href="#"><img src="/assets/images/clients/9.png" alt="Clients"></a></div>
+                            <div class="oc-item"><a href="#"><img src="/assets/images/clients/10.png" alt="Clients"></a></div>
+    
+                        </div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
