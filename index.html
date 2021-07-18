@@ -22,6 +22,7 @@ walkthrough_thumbnail_img: /assets/images/skate/adaptations-demo.png
 walkthrough_subtitle: Adaptation Demonstration
 walkthrough_title: Making A Roll-in & Fly-out Visible
 walkthrough_description: Alt Route's Matt and Curtis explain some of the visibility markers placed strategically to help Cassandra work towards her goal of 'flying out' of the bathtub bowl at Calgary's Shaw Millenium Park.
+walkthrough_video_url: https://www.youtube.com/watch?v=uLyO4y5yRqs&ab_channel=AltRouteProjects
 testimonials_bg_img: /assets/images/skate/testimonialsbg.jpg
 
 ---
@@ -100,7 +101,7 @@ testimonials_bg_img: /assets/images/skate/testimonialsbg.jpg
 						</div>
 
 						<div class="center bottommargin">
-							<a class="d-block position-relative" href="https://vimeo.com/101373765" data-lightbox="iframe">
+							<a class="d-block position-relative" href="{{ page.walkthrough_video_url }}" data-lightbox="iframe">
 								<img src="{{ page.walkthrough_thumbnail_img }}" alt="Video">
 								<div class="bg-overlay">
 									<div class="bg-overlay-content dark">
@@ -129,9 +130,6 @@ testimonials_bg_img: /assets/images/skate/testimonialsbg.jpg
 						<div class="flexslider">
 							<div class="slider-wrap">
 								<div class="slide">
-									<div class="testi-image">
-										<a href="#"><img src="/assets/images/testimonials/3.jpg" alt="Customer Testimonails"></a>
-									</div>
 									<div class="testi-content">
 										<p>Similique fugit repellendus expedita excepturi iure perferendis provident quia eaque. Repellendus, vero numquam?</p>
 										<div class="testi-meta">
@@ -141,9 +139,6 @@ testimonials_bg_img: /assets/images/skate/testimonialsbg.jpg
 									</div>
 								</div>
 								<div class="slide">
-									<div class="testi-image">
-										<a href="#"><img src="/assets/images/testimonials/2.jpg" alt="Customer Testimonails"></a>
-									</div>
 									<div class="testi-content">
 										<p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
 										<div class="testi-meta">
@@ -153,9 +148,6 @@ testimonials_bg_img: /assets/images/skate/testimonialsbg.jpg
 									</div>
 								</div>
 								<div class="slide">
-									<div class="testi-image">
-										<a href="#"><img src="/assets/images/testimonials/1.jpg" alt="Customer Testimonails"></a>
-									</div>
 									<div class="testi-content">
 										<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</p>
 										<div class="testi-meta">
@@ -181,25 +173,28 @@ testimonials_bg_img: /assets/images/skate/testimonialsbg.jpg
 				<div class="container" style="margin-bottom: 60px;">
 					<div class="row posts-md col-mb-30">
 
+                        {% for post in site.posts limit:4 %}
+
 						<div class="col-lg-3 col-md-6">
 							<div class="entry">
 								<div class="entry-image">
-									<a href="#"><img src="/assets/images/magazine/thumb/1.jpg" alt="Image"></a>
+									<a href="{{ post.url }}"><img src="{{ post.image }}" alt="Image"></a>
 								</div>
 								<div class="entry-title title-xs nott">
-									<h3><a href="blog-single.html">Bloomberg smart cities; change-makers economic security</a></h3>
+									<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 								</div>
 								<div class="entry-meta">
 									<ul>
-										<li><i class="icon-calendar3"></i> 13th Jun 2021</li>
-										<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 53</a></li>
+										<li><i class="icon-calendar3"></i> {{ post.date | date: "%a, %b %d, %y"}} </li>
 									</ul>
 								</div>
 								<div class="entry-content">
-									<p>Prevention effect, advocate dialogue rural development lifting people up community civil society. Catalyst, grantees leverage.</p>
+									<p>{{ post.content | truncatewords: 30}}</p>
 								</div>
 							</div>
 						</div>
+
+                        {% endfor %}
 
 						<div class="col-lg-3 col-md-6">
 							<div class="entry">
