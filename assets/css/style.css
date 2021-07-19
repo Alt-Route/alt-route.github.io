@@ -7583,7 +7583,6 @@ body:not(.device-touch) .portfolio {
 .entry-image .slide a,
 .entry-image img {
 	display: block;
-	position: relative;
 	width: 100%;
 	height: auto;
 }
@@ -16775,6 +16774,24 @@ label.checkbox { padding-left: 20px; }
 .fadeOutUpSmall {
 	-webkit-animation-name: fadeOutUpSmall;
 	animation-name: fadeOutUpSmall;
+}
+
+
+.rect-img-container {
+position: relative;
+}
+
+.rect-img-container::after {
+content: "";
+display: block;
+padding-bottom: 100%;
+}
+
+.rect-img {
+position: absolute !important;
+width: 100%;
+height: 100% !important;
+object-fit: cover;
 }
 
 
