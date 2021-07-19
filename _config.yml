@@ -29,9 +29,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_url: https://www.instagram.com/altrouteprojects/
 youtube_url: https://www.youtube.com/channel/UCcH1qEWaLxa6nXWctoW093A
 
+paginate: 9
+paginate_path: "/news/page:num/"
+
 # Build settings
 theme: minima
 plugins:
+  - jekyll-paginate
   - jekyll-feed
 
 collections:

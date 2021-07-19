@@ -1,0 +1,49 @@
+---
+title: news
+layout: default
+img: /assets/images/skateboard-1030929_1920.jpg
+---
+
+<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<!-- Posts
+					============================================= -->
+					<div id="posts" class="post-grid row grid-container gutter-40 clearfix" data-layout="fitRows">
+
+						{% for post in paginator.posts %}
+                        <div class="entry col-md-4 col-sm-6 col-12">
+							<div class="grid-inner">
+								<div class="entry-image">
+									<a href="{{ post.url }}" ><img src="{{ post.img }}" alt="Standard Post with Image"></a>
+								</div>
+								<div class="entry-title">
+									<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+								</div>
+								<div class="entry-meta">
+									<ul>
+										<li><i class="icon-calendar3"></i> {{ post.date | date: "%a, %b %d, %y"}}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+                        {% endfor %}
+
+					</div><!-- #posts end -->
+
+					<div class="clear mt-5"></div>
+
+					<!-- Pagination
+					============================================= -->
+					<div class="d-flex justify-content-between mt-5">
+						<a href="#" class="btn btn-outline-secondary">&larr; Older</a>
+						<a href="#" class="btn btn-outline-dark">Newer &rarr;</a>
+					</div>
+					<!-- .pager end -->
+
+				</div>
+			</div>
+		</section><!-- #content end -->
