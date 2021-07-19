@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    {% include header.html %}
+    <body class="stretched">
+
+        <!-- Document Wrapper
+        ============================================= -->
+        <div id="wrapper" class="clearfix">
+        
+            {% include navigation.html %}
+            {% include pagetitle.html %}
+            <!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry clearfix">
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content mt-0">
+
+								{{ content }}
+								<!-- Post Single - Content End -->
+                                <div class="line"></div>
+
+								<!-- Post Single - Share
+								============================================= -->
+								<div class="si-share border-0 d-flex justify-content-between align-items-center">
+									<span>Share this Post:</span>
+									<div>
+										<a href="#" class="social-icon si-borderless si-facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+										<a href="#" class="social-icon si-borderless si-twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+										<a href="#" class="social-icon si-borderless si-pinterest">
+											<i class="icon-pinterest"></i>
+											<i class="icon-pinterest"></i>
+										</a>
+										<a href="#" class="social-icon si-borderless si-gplus">
+											<i class="icon-gplus"></i>
+											<i class="icon-gplus"></i>
+										</a>
+										<a href="#" class="social-icon si-borderless si-rss">
+											<i class="icon-rss"></i>
+											<i class="icon-rss"></i>
+										</a>
+										<a href="#" class="social-icon si-borderless si-email3">
+											<i class="icon-email3"></i>
+											<i class="icon-email3"></i>
+										</a>
+									</div>
+								</div><!-- Post Single - Share End -->
+
+							</div>
+						</div><!-- .entry end -->
+
+						<!-- Post Navigation
+						============================================= -->
+						<div class="row justify-content-between col-mb-30 post-navigation">
+                            {% if page.previous.url %}
+							<div class="col-12 col-md-auto text-center">
+								<a href="{{ page.previous.url }}">&lArr; {{ page.previous.title }}</a>
+							</div>
+                            {% endif %}
+
+							{% if page.next.url %}
+                            <div class="col-12 col-md-auto text-center">
+								<a href="{{ page.next.url }}">{{ page.next.title }} &rArr;</a>
+							</div>
+                            {% endif %}
+						</div><!-- .post-navigation end -->
+
+						<div class="line"></div>
+
+
+						<!-- Comments
+						============================================= -->
+						<div id="comments" class="clearfix">
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+            
+            {% include footer.html %}
+
+    </body>
+</html>
