@@ -40,8 +40,12 @@ img: /assets/images/skateboard-1030929_1920.jpg
 					<!-- Pagination
 					============================================= -->
 					<div class="d-flex justify-content-between mt-5">
-						<a href="#" class="btn btn-outline-secondary">&larr; Older</a>
-						<a href="#" class="btn btn-outline-dark">Newer &rarr;</a>
+						{% if paginator.next_page %}
+						<a href="{{ paginator.next_page_path }}" class="btn btn-outline-dark">&larr; Older</a>
+						{% endif %}
+						{% if paginator.previous_page %}
+						<a href="{{ paginator.previous_page_path }}" class="btn btn-outline-dark">Newer &rarr;</a>
+						{% endif %}
 					</div>
 					<!-- .pager end -->
 
