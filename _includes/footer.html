@@ -15,11 +15,11 @@
 
 									<div class="widget clearfix">
 
-										<img src="/images/footer-widget-logo.png" alt="Image" class="footer-logo">
+										<img src="/assets/images/Altroute-Logo-White.png" alt="Image" class="footer-logo" style="padding-right: 3rem;">
 
-										<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>
+										<p>We make skateparks <strong>accessible</strong> for <strong>low & no vision</strong> youth and athletes.</p>
 
-										<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+										<div style="background: url('/assets/images/world-map.png') no-repeat center center; background-size: 100%;">
 											<address>
 												<strong>Headquarters:</strong><br>
 												Calgary, AB, Canada<br>
@@ -38,13 +38,11 @@
 										<h4>Menu</h4>
 
 										<ul>
-											<li><a href="https://codex.wordpress.org/">Documentation</a></li>
-											<li><a href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>
-											<li><a href="https://wordpress.org/extend/plugins/">Plugins</a></li>
-											<li><a href="https://wordpress.org/support/">Support Forums</a></li>
-											<li><a href="https://wordpress.org/extend/themes/">Themes</a></li>
-											<li><a href="https://wordpress.org/news/">Canvas Blog</a></li>
-											<li><a href="https://planet.wordpress.org/">Canvas Planet</a></li>
+											<li><a href="/">Home</a></li>
+											<li><a href="/about">About</a></li>
+											<li><a href="/news">News</a></li>
+											<li><a href="/contact">Contact</a></li>
+											<li><a href="#">Merch (coming soon)</a></li>
 										</ul>
 
 									</div>
@@ -57,50 +55,23 @@
 										<h4>Recent Posts</h4>
 
 										<div class="posts-sm row col-mb-30" id="post-list-footer">
+											{% for post in site.posts limit:3%}
 											<div class="entry col-12">
 												<div class="grid-inner row">
 													<div class="col">
 														<div class="entry-title">
-															<h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+															<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
 														</div>
 														<div class="entry-meta">
 															<ul>
-																<li>10th July 2021</li>
+																<li>{{ post.date | date: "%A, %b %d, %Y"}}</li>
 															</ul>
 														</div>
 													</div>
 												</div>
 											</div>
+											{% endfor %}
 
-											<div class="entry col-12">
-												<div class="grid-inner row">
-													<div class="col">
-														<div class="entry-title">
-															<h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>
-														</div>
-														<div class="entry-meta">
-															<ul>
-																<li>10th July 2021</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="entry col-12">
-												<div class="grid-inner row">
-													<div class="col">
-														<div class="entry-title">
-															<h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>
-														</div>
-														<div class="entry-meta">
-															<ul>
-																<li>10th July 2021</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
 										</div>
 									</div>
 
