@@ -32,3 +32,5 @@ fields:
   name: excerpt_separator
   label: excerpt_separator
   hidden: true
+pages:
+- _posts/2020-10-21-livewire-calgary-article.md
