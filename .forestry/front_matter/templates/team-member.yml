@@ -1,0 +1,19 @@
+---
+label: Team Member
+hide_body: false
+fields:
+- type: text
+  name: name
+  label: name
+- type: text
+  name: section
+  label: section
+- type: text
+  name: title
+  label: title
+- type: file
+  name: img
+  label: img
+- type: textarea
+  name: img_alt
+  label: img_alt
