@@ -12,6 +12,7 @@ fields:
   name: logo
   label: logo
 pages:
+- _sponsors/calgary-parking-authority.md
 - _sponsors/case.md
 - _sponsors/cnib.md
 - _sponsors/compound.md
