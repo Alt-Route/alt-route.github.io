@@ -1,0 +1,13 @@
+---
+label: Sponsor
+hide_body: true
+fields:
+- type: text
+  name: name
+  label: name
+- type: text
+  name: website
+  label: website
+- type: file
+  name: logo
+  label: logo
