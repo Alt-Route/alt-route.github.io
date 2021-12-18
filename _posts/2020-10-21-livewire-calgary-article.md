@@ -1,10 +1,10 @@
 ---
 layout: post
 title: We Were In the News with Livewire Calgary
-date: 2020-10-21T13:58:48.000-06:00
+date: 2020-10-21 19:58:48 +0000
 type: Making News
 img: "/assets/images/old-newspaper-350376_1920.jpg"
-img_alt: Vintage Newspaper that is written in a nordic language with indescernable
+img_alt: Vintage Newspaper that is written in a Nordic language with indiscernible
   text.
 author: Omar Sherif
 excerpt_separator: "<!--more-->"
