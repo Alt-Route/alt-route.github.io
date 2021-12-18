@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "How We Make Skateboard Parks More Accessible for Blind and Low Vision Athletes"
-date:   2021-03-31 13:58:48 -0600
+title: How We Make Skateboard Parks More Accessible for Blind and Low Vision Athletes
+date: 2021-03-31T13:58:48.000-06:00
 type: Blog Article
-img: /assets/images/vans-1642993_1920.jpg
-img_alt: black and white photo of a person wearing black skate shoes one foot on a skateboar, the other foot on the ground.
+img: "/assets/images/vans-1642993_1920.jpg"
+img_alt: black and white photo of a person wearing black skate shoes one foot on a
+  skateboar, the other foot on the ground.
 author: Matt Janz
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
+
 ---
 The feeling is what I remember the most from that morning on Nov. 14, 2020. I stopped to catch my breath and saw it: [The Compound](https://thecompoundyyc.com/ "The Compound") indoor skatepark here in Calgary, Alberta temporarily dressed in bright colours, LED light strips, and tactile guidelines. It was my first glimpse of what an accessible skatepark could look like, and for the first time in a while I felt like I didn’t need to struggle to be there – to be a part of the main story. I felt that, despite my vision loss, I belonged.
 
