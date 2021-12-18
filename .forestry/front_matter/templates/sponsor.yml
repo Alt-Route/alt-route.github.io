@@ -11,3 +11,5 @@ fields:
 - type: file
   name: logo
   label: logo
+pages:
+- _sponsors/takingitglobal.md
