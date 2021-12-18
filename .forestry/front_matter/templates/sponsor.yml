@@ -12,6 +12,10 @@ fields:
   name: logo
   label: logo
 pages:
+- _sponsors/case.md
+- _sponsors/cnib.md
+- _sponsors/compound.md
+- _sponsors/ninetimes.md
 - _sponsors/risingyouth.md
 - _sponsors/shaw.md
 - _sponsors/skatepark-project.md
