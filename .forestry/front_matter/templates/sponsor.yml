@@ -12,5 +12,7 @@ fields:
   name: logo
   label: logo
 pages:
+- _sponsors/risingyouth.md
+- _sponsors/shaw.md
 - _sponsors/skatepark-project.md
 - _sponsors/takingitglobal.md
