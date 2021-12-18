@@ -12,4 +12,5 @@ fields:
   name: logo
   label: logo
 pages:
+- _sponsors/skatepark-project.md
 - _sponsors/takingitglobal.md
