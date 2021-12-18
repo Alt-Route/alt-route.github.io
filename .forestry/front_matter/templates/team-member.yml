@@ -18,6 +18,7 @@ fields:
   name: img_alt
   label: img_alt
 pages:
+- _team/cassandra-ruttle.md
 - _team/gabriel-pigeon.md
 - _team/jordan-h.md
 - _team/zach-abdalla.md
