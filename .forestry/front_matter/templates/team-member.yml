@@ -17,3 +17,6 @@ fields:
 - type: textarea
   name: img_alt
   label: img_alt
+pages:
+- _team/jordan-h.md
+- _team/zach-abdalla.md
